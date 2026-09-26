@@ -2,12 +2,7 @@
 
 # T4FNet
 
-### Structure- and Physics-Prior Guided Low-Concentration MPI Reconstruction
-
-<p>
-  A reproducible PyTorch implementation for restoring high-quality fifth-harmonic
-  magnetic particle imaging from paired low-concentration harmonic measurements.
-</p>
+### Cross-Harmonic Prior Learning for Low-Concentration Magnetic Particle Imaging Restoration: A Benchmark Dataset and Baseline Framework
 
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.10-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)

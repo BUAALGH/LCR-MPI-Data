@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.10-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![CUDA](https://img.shields.io/badge/CUDA-12.8-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
-[![Dataset](https://img.shields.io/badge/Dataset-LCR--MPI--Data-00A6D6)](https://doi.org/10.5281/zenodo.22112372)
+[![Dataset](https://img.shields.io/badge/Dataset-LCR--MPI--Data-00A6D6)](https://zenodo.org/records/22112372)
 [![Input](https://img.shields.io/badge/Input-64%C3%9764-6C63FF)](#data-preparation)
 
 [Overview](#overview) · [Architecture](#architecture) · [Dataset](#dataset) · [Installation](#installation) · [Training](#training) · [Inference](#inference)

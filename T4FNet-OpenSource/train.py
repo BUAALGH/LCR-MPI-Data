@@ -133,7 +133,7 @@ def train_fold(fold_index, args, run_dir, device):
         weight_decay=args.weight_decay,
     )
     scheduler = CosineAnnealingLR(
-        optimizer, T_max=args.epochs, eta_min=args.lr * 1e-3
+        optimizer, T_max=args.scheduler_t_max, eta_min=args.lr * 1e-3
     )
     use_amp = args.amp and device.type == "cuda"
     scaler = GradScaler("cuda", enabled=use_amp)
@@ -232,6 +232,7 @@ def parse_args():
     parser.add_argument("--weight-decay", type=float)
     parser.add_argument("--num-workers", type=int)
     parser.add_argument("--save-interval", type=int)
+    parser.add_argument("--scheduler-t-max", type=int)
     parser.add_argument("--seed", type=int)
     parser.add_argument("--chebyshev-blocks", type=int)
     parser.add_argument("--l1-weight", type=float)

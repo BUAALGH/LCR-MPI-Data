@@ -163,7 +163,7 @@ Set checkpoint paths in [`configs/t4fnet_v4_b.json`](configs/t4fnet_v4_b.json) o
 | Split per fold | 65 train / 15 validation / 20 ID test |
 | Samples per training fold | 975 with pre-generated augmentation |
 | Random seed | 42 |
-| Epochs | 20 |
+| Epochs | 100 |
 | Total batch size | 8 |
 | Optimizer | AdamW |
 | Learning rate | `1e-4` |
@@ -173,7 +173,7 @@ Set checkpoint paths in [`configs/t4fnet_v4_b.json`](configs/t4fnet_v4_b.json) o
 | `T_max` | 20 epochs |
 | Minimum learning rate | `1e-7` |
 | Scheduler update | Once per epoch |
-| Loss | `0.3 × L1 + 0.7 × (1 − SSIM)` |
+| Loss | `0.5 × L1 + 0.5 × (1 − SSIM)` |
 | Mixed precision | Enabled on CUDA |
 | Checkpoint selection | Lowest validation loss |
 

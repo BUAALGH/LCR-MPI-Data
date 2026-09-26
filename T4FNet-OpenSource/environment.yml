@@ -1,0 +1,10 @@
+name: t4fnet
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10.18
+  - pip
+  - pip:
+      - -r requirements.txt

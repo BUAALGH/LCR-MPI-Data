@@ -27,7 +27,7 @@ T4FNet reconstructs a high-concentration fifth-harmonic MPI image from two low-c
 
 ```text
 Input  : [-L3, L5]  -> [B, 2, 64, 64]
-Output : H5          -> [B, 1, 64, 64]
+Output : H5         -> [B, 1, 64, 64]
 ```
 
 The main components are:
@@ -36,7 +36,6 @@ The main components are:
 - **L3CB:** a learnable Chebyshev bridge that maps third-harmonic information into fifth-harmonic features.
 - **SE Fusion:** adaptive fusion of the measured and physics-mapped fifth-harmonic features.
 - **SATM:** two soft-mask-guided Transformer stages for global reconstruction.
-- **UNest-style decoder:** progressive feature fusion and image recovery at `64 × 64` resolution.
 
 ## Architecture
 
@@ -60,9 +59,6 @@ The main components are:
 | Blocks per stage | 2 |
 | MLP dimension | 512 |
 | Decoder channels | 64 |
-| Output activation | Sigmoid |
-| Total parameters | 96,879,309 |
-| Trainable reconstruction parameters | 2,977,114 |
 
 ### MedSAM-LoRA configuration
 
@@ -95,29 +91,7 @@ T4FNet is developed with **LCR-MPI-Data**, a paired low-/high-concentration cros
 | Generalization | 8 phantoms | Cross-device evaluation | Yes |
 | InVivo | 2 mouse cases | Preliminary in-vivo inference | No |
 
-Dataset: **[LCR-MPI-Data on Zenodo](https://doi.org/10.5281/zenodo.22112372)**
-
-### Data preparation
-
-The selected harmonic channels are resized from `49 × 49` to `64 × 64` using bilinear interpolation. Min-max normalization is applied independently to each resized image.
-
-```text
-input channel 0 = minmax(resize(-L3, 64 × 64))
-input channel 1 = minmax(resize( L5, 64 × 64))
-target          = minmax(resize( H5, 64 × 64))
-```
-
-Expected layout:
-
-```text
-LCR-MPI-Data/
-├── ID/
-├── ID-Augmented/
-├── Generalization/
-└── InVivo/
-```
-
-Only augmentations belonging to the current fold's training subjects are loaded, preventing validation and test leakage.
+Dataset: **[LCR-MPI-Data on Zenodo](https://zenodo.org/records/22112372)**
 
 ## Installation
 

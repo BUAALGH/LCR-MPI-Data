@@ -1,6 +1,6 @@
 <div align="center">
 
-# T4FNet
+# T4F-Net
 
 ### Cross-Harmonic Prior Learning for Low-Concentration Magnetic Particle Imaging Restoration: A Benchmark Dataset and Baseline Framework
 

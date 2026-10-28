@@ -8,7 +8,8 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.10-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![CUDA](https://img.shields.io/badge/CUDA-12.8-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 [![Dataset](https://img.shields.io/badge/Dataset-LCR--MPI--Data-00A6D6)](https://zenodo.org/records/22112372)
-[![Input](https://img.shields.io/badge/Input-64%C3%9764-6C63FF)](#data-preparation)
+[![Data](https://img.shields.io/badge/Data-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Code](https://img.shields.io/badge/Code-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Overview](#overview) · [Architecture](#architecture) · [Dataset](#dataset) · [Installation](#installation) · [Training](#training) · [Inference](#inference)
 

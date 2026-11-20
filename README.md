@@ -1,6 +1,6 @@
 <div align="center">
 
-# T4F-Net
+<img width="3840" height="561" alt="Figure3_01" src="https://github.com/user-attachments/assets/4e70189b-a981-4de8-91e9-75a696d1f7d2" />
 
 ### Cross-Harmonic Prior Learning for Low-Concentration Magnetic Particle Imaging Restoration: A Benchmark Dataset and Baseline Framework
 
